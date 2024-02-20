@@ -17,7 +17,7 @@
   }
 
 
-  html{
+html{
     box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ body{
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
-    color: black;
+    color: #2E2E2E;
 }
 
 .wrapper{
@@ -46,11 +46,11 @@ body{
     justify-content: space-between;
     padding-top: 20px;
 }
-.header__logo{
-    text-decoration: none;
+.header__logo{    
     font-size: 26px;
     line-height: 26px;
-    color: 2E2;
+    color: #2E2E2E;
+    text-decoration: none;
 }
 
 .header__list{
@@ -64,12 +64,44 @@ body{
 .header__item:last-child{
     margin-right: 0;
 }
+
 .header__link{
     font-family: 'Oxygen';
     font-size: 12px;
     line-height: 20px;
-    color: 2E2;
+    letter-spacing: 0.6px;
+    color: #2E2E2E;
     text-decoration: none;
+}
+
+.intro{
+    padding-top: 163px;
+    text-align: center;
+}
+.intro__title{
+    font-family: 'Lora';
+    font-size: 50px;
+    line-height: 51px;
+    color: 2E2;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.intro__subtitle{
+    font-family: 'Oxygen';
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 160px;
+}
+
+.content{
+    padding: 140px 0px 140px;
+}
+.content__text{
+    font-family: 'Oxygen';
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 35px;
+
 }
 
 
@@ -82,13 +114,16 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 35px;
 }
-.footer__logo{
+.footer__logo{    
+    font-size: 26px;
+    line-height: 26px;
+    color: #ffffff99;
     text-decoration: none;
 }
 
 .footer__list{
-
     display: flex;
     flex-wrap: wrap;
 }
@@ -101,7 +136,8 @@ body{
 .footer__link{
     font-family: 'Oxygen';
     font-size: 12px;
-    line-height: 20px;
-    color: 2E2;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #ffffff99;
     text-decoration: none;
 }
