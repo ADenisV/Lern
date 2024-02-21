@@ -121,12 +121,12 @@ body{
     justify-content: space-between;
     padding-top: 35px;
 }
-.footer__logo{    
+/*.footer__logo{    
     font-size: 26px;
     line-height: 26px;
     color: #ffffff99;
     text-decoration: none;
-}
+}*/
 .footer__list{
     display: flex;
     flex-wrap: wrap;
@@ -144,4 +144,5 @@ body{
     letter-spacing: 1px;
     color: #ffffff99;
     text-decoration: none;
+    text-transform: uppercase;
 }
