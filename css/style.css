@@ -38,7 +38,6 @@ body{
 .header{
     background-color: #ffffff;
 }
-
 .header__wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +51,6 @@ body{
     color: #2E2E2E;
     text-decoration: none;
 }*/
-
 .header__list{
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +61,6 @@ body{
 .header__item:last-child{
     margin-right: 0;
 }
-
 .header__link{
     font-family: 'Oxygen';
     font-size: 12px;
