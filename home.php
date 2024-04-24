@@ -2,18 +2,7 @@
 require 'db.php';
 ?>
 <?php
-$posts = [
- [
-   'title' => 'The Road Ahead',
-   'subtitle' => '',
-   'img_modifier' => '',
-   'author' => '',
-   // другие свойства этого поста
- ],
- [
-   // свойства второго поста
- ],
-];
+require 'big_posts';
 ?>
 
 <!DOCTYPE html>
