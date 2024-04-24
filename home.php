@@ -1,3 +1,21 @@
+<?php
+require 'db.php';
+?>
+<?php
+$posts = [
+ [
+   'title' => 'The Road Ahead',
+   'subtitle' => '',
+   'img_modifier' => '',
+   'author' => '',
+   // другие свойства этого поста
+ ],
+ [
+   // свойства второго поста
+ ],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,11 +30,11 @@
         <!-- навигация и верхний блок -->
         <div class="escape-journey-container">
           <div class="header">
-            <a href="home1.html" class="escape-text">
-              <img src="static/images/Escape..svg" alt="Escape.">
+            <a href="home.html" class="escape-text">
+              <img src="/static/images/Escape..svg" alt="Escape.">
             </a>
             <div class="navbar-links-container">
-              <a href="home1.html" class="header-link-style">Home</a>
+              <a href="home.html" class="header-link-style">Home</a>
               <a href="#" class="header-link-style">Categories</a>
               <a href="#" class="header-link-style">About</a>
               <a href="#" class="header-link-style">Contact</a>
@@ -59,7 +77,7 @@
                 <!-- разметка блока -->
                 <a href="The-Road-Ahead.html" class="adventure-card">
                   <!-- задний фон -->
-                  <img src="static/images/div_1dq5qdd_2b7f09.jpeg" alt="" class="adventure-card-img">
+                  <img src="/static/images/div_1dq5qdd_2b7f09.jpeg" alt="" class="adventure-card-img">
                   <!-- блок с текстовой информацией -->
                   <div class="quote-card">
                     <!-- teg -->
@@ -75,7 +93,7 @@
                         <!-- автор -->
                         <a href="#" class="author-container">
                           <div class="profile-card">
-                            <img src="static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
+                            <img src="/static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
                           </div>
                           <p class="author-style">Mat Vogels</p>
                         </a>
@@ -90,7 +108,7 @@
                   <!-- разметка блока -->
                   <a href="#" class="adventure-card">
                       <!-- задний фон -->
-                      <img src="static/images/div__usd733_b58f9b.jpeg" alt="backgraund" class="adventure-card-img">
+                      <img src="/static/images/div__usd733_b58f9b.jpeg" alt="backgraund" class="adventure-card-img">
                       <!-- блок с текстовой информацией -->
                         <div class="quote-card">
                           <div class="visible2"><div class="teg">Adventure</div>
@@ -101,7 +119,7 @@
                             <object data="urj/fdr">  
                               <a href="#" class="author-container">
                                 <div class="profile-card">
-                                  <img src="static/images/img_1_187_b5ed31.jpeg" alt="avatar" class="rounded-image-avatar">
+                                  <img src="/static/images/img_1_187_b5ed31.jpeg" alt="avatar" class="rounded-image-avatar">
                                 </div>
                                 <p class="author-style">William Wong</p>
                               </a>
@@ -131,7 +149,7 @@
                     <div class="vertical-flex-container">
                       <!-- картинка -->  
                       <div class="card-container-image">
-                        <img src="static/images/balloons.svg" alt="balloons" class="img-lit-card">
+                        <img src="/static/images/balloons.svg" alt="balloons" class="img-lit-card">
                       </div>                    
                       <!-- линия -->
                       <div class="nested-text-container"></div>
@@ -153,7 +171,7 @@
                       <div class="author-container">
                         <!-- аватарка -->
                         <div class="profile-card">
-                          <img src="static/images/img_1_187_b5ed31.jpeg" alt="avatar" class="rounded-image-avatar">
+                          <img src="/static/images/img_1_187_b5ed31.jpeg" alt="avatar" class="rounded-image-avatar">
                         </div>
                         <!-- имя и стиль -->
                         <p class="author-style">William Wong</p>
@@ -171,7 +189,7 @@
                     <div class="vertical-flex-container">
                       <!-- картинка -->  
                       <div class="card-container-image">
-                        <img src="static/images/bridge.svg" alt="bridge" class="img-lit-card">
+                        <img src="/static/images/bridge.svg" alt="bridge" class="img-lit-card">
                       </div>
                       <!-- линия -->
                       <div class="nested-text-container"></div>
@@ -193,7 +211,7 @@
                       <div class="author-container">
                         <!-- аватарка -->
                         <div class="profile-card">
-                          <img src="static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
+                          <img src="/static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
                         </div>
                         <!-- имя и стиль -->
                         <p class="author-style">Mat Vogels</p>
@@ -211,7 +229,7 @@
                     <div class="vertical-flex-container">
                       <!-- картинка -->  
                       <div class="card-container-image">
-                        <img src="static/images/lake.svg" alt="lake" class="img-lit-card">
+                        <img src="/static/images/lake.svg" alt="lake" class="img-lit-card">
                       </div>
                       <!-- линия -->
                       <div class="nested-text-container"></div>
@@ -233,7 +251,7 @@
                       <div class="author-container">
                         <!-- аватарка -->
                         <div class="profile-card">
-                          <img src="static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
+                          <img src="/static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
                         </div>
                         <!-- имя и стиль -->
                         <p class="author-style">Mat Vogels</p>
@@ -251,7 +269,7 @@
                     <div class="vertical-flex-container">
                       <!-- картинка -->  
                       <div class="card-container-image">
-                        <img src="static/images/sea.svg" alt="sea" class="img-lit-card">
+                        <img src="/static/images/sea.svg" alt="sea" class="img-lit-card">
                       </div>
                       <!-- линия -->
                       <div class="nested-text-container"></div>
@@ -273,7 +291,7 @@
                       <div class="author-container">
                         <!-- аватарка -->
                         <div class="profile-card">
-                          <img src="static/images/img_1_187_b5ed31.jpeg" alt="avatar" class="rounded-image-avatar">
+                          <img src="/static/images/img_1_187_b5ed31.jpeg" alt="avatar" class="rounded-image-avatar">
                         </div>
                         <!-- имя и стиль -->
                         <p class="author-style">William Wong</p>
@@ -291,7 +309,7 @@
                     <div class="vertical-flex-container">
                       <!-- картинка -->  
                       <div class="card-container-image">
-                        <img src="static/images/power_lines.svg" alt="power lines" class="img-lit-card">
+                        <img src="/static/images/power_lines.svg" alt="power lines" class="img-lit-card">
                       </div>
                       <!-- линия -->
                       <div class="nested-text-container"></div>
@@ -313,7 +331,7 @@
                       <div class="author-container">
                         <!-- аватарка -->
                         <div class="profile-card">
-                          <img src="static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
+                          <img src="/static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
                         </div>
                         <!-- имя и стиль -->
                         <p class="author-style">Mat Vogels</p>
@@ -331,7 +349,7 @@
                     <div class="vertical-flex-container">
                       <!-- картинка -->  
                       <div class="card-container-image">
-                        <img src="static/images/waterfall.svg" alt="waterfall" class="img-lit-card">
+                        <img src="/static/images/waterfall.svg" alt="waterfall" class="img-lit-card">
                       </div>
                       <!-- линия -->
                       <div class="nested-text-container"></div>
@@ -353,7 +371,7 @@
                       <div class="author-container">
                         <!-- аватарка -->
                         <div class="profile-card">
-                          <img src="static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
+                          <img src="/static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
                         </div>
                         <!-- имя и стиль -->
                         <p class="author-style">Mat Vogels</p>
@@ -372,8 +390,8 @@
       <div class="footer">
         <!-- паддинги и блок с лого и навбвром -->
         <div class="escape-menu">
-          <a href="home1.html" class="escape-text">
-            <img src="static/images/Escape..svg" alt="Escape.">
+          <a href="home.html" class="escape-text">
+            <img src="/static/images/Escape..svg" alt="Escape.">
           </a>
           <div class="navbar-container">
             <a href="#" class="navigation-link-styles">Home</a>
