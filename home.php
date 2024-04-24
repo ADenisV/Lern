@@ -2,7 +2,7 @@
 require 'db.php';
 ?>
 <?php
-require 'big_posts';
+require 'big_posts.php';
 ?>
 
 <!DOCTYPE html>
@@ -62,61 +62,12 @@ require 'big_posts';
               <!-- большие карты -->
               <div class="featured-posts-container1">
 
-                <!-- 1я карта -->
-                <!-- разметка блока -->
-                <a href="The-Road-Ahead.html" class="adventure-card">
-                  <!-- задний фон -->
-                  <img src="/static/images/div_1dq5qdd_2b7f09.jpeg" alt="" class="adventure-card-img">
-                  <!-- блок с текстовой информацией -->
-                  <div class="quote-card">
-                    <!-- teg -->
-                    <div class="visible1">
-                      <div class="teg">Category</div>
-                    </div>                       
-                    <!-- заголовок и подзаголовок -->
-                    <p class="article-title">The Road Ahead</p>
-                    <p class="card-subtitle">The road ahead might be paved - it might not be.</p>
-                    <!-- автрор и дата -->
-                    <div class="article-container">
-                      <object data="hhj/dhh">  
-                        <!-- автор -->
-                        <a href="#" class="author-container">
-                          <div class="profile-card">
-                            <img src="/static/images/img_1_224_7a4480.jpeg" alt="avatar" class="rounded-image-avatar">
-                          </div>
-                          <p class="author-style">Mat Vogels</p>
-                        </a>
-                      </object>
-                      <!-- дата -->
-                      <p class="meta-text">September 25, 2015</p>
-                    </div>
-                  </div>
-                </a>                 
-                  
-                  <!-- 2я карта -->
-                  <!-- разметка блока -->
-                  <a href="#" class="adventure-card">
-                      <!-- задний фон -->
-                      <img src="/static/images/div__usd733_b58f9b.jpeg" alt="backgraund" class="adventure-card-img">
-                      <!-- блок с текстовой информацией -->
-                        <div class="quote-card">
-                          <div class="visible2"><div class="teg">Adventure</div>
-                        </div>        
-                        <p class="article-title">From Top Down</p>
-                        <p class="card-subtitle">Once a year, go someplace you’ve never been before.</p>
-                        <div class="article-container">
-                            <object data="urj/fdr">  
-                              <a href="#" class="author-container">
-                                <div class="profile-card">
-                                  <img src="/static/images/img_1_187_b5ed31.jpeg" alt="avatar" class="rounded-image-avatar">
-                                </div>
-                                <p class="author-style">William Wong</p>
-                              </a>
-                            </object>
-                          <p class="meta-text">September 25, 2015</p>
-                        </div>
-                      </div>
-                  </a>
+                <?php 
+                foreach ($posts as $post) {
+                  include 'post_preview.php';
+                }
+                ?>
+
               </div>
             </div>
 

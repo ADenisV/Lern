@@ -1,6 +1,6 @@
 
 <!-- разметка блока -->
-<a href="The-Road-Ahead.html" class="adventure-card">
+<a href="/post?id=<?= $post['id'] ?>" class="adventure-card">
   <!-- задний фон -->
   <img src="<?= $post['img_modifier'] ?>" alt="" class="adventure-card-img">
   <!-- блок с текстовой информацией -->
