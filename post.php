@@ -1,10 +1,14 @@
+<?php
+require 'big_posts.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta type="description" content="Blog about The-Road-Ahead">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The-Road-Ahead</title>
+    <title><?= $post['title'] ?></title>
     <link href="/static/css/reset.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
   </head>
@@ -39,10 +43,10 @@
     <main class="main">
       <section class="intro">
           <h1 class="intro__title">
-            The Road Ahead
+            <?= $post['title'] ?>
           </h1>
           <p class="intro__subtitle">
-            The road ahead might be paved - it might not be.
+            <?= $post['subtitle'] ?>
           </p>
         </div>
         <img class="intro__img" src="/static/images/northern-lights.svg" alt="Northern lights">
