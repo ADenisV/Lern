@@ -15,24 +15,24 @@ function createDBConnection(): mysqli {
   return $conn;
 }
 
-// function closeDBConnection(mysqli $conn): void {
-//   $conn->close();
-// }
+function closeDBConnection(mysqli $conn): void {
+  $conn->close();
+}
 
-// function getAndPrintPostsFromDB(mysqli $conn): void {
-//   $sql = "SELECT * FROM post";
-//   $result = $conn->query($sql);
-//   if ($result->num_rows > 0) {
-//     while($row = $result->fetch_assoc()) {
-//       echo "ID: {$row['post_id']} - Title: {$row['title']} - Subtitle: {$row['subtitle']} - Date: {$row['publish_date']} - Is Featured: {$row['featured']} <br>";
-//     }
-//   } else {
-//     echo "0 results";
-//   }
-// }
+function getAndPrintPostsFromDB(mysqli $conn): void {
+  $sql = "SELECT * FROM post";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      echo "ID: {$row['post_id']} - Title: {$row['title']} - Subtitle: {$row['subtitle']} - Date: {$row['publish_date']} - Is Featured: {$row['featured']} <br>";
+    }
+  } else {
+    echo "0 results";
+  }
+}
 
-// $conn = createDBConnection();
-// getAndPrintPostsFromDB($conn);
-// closeDBConnection($conn);
+$conn = createDBConnection();
+getAndPrintPostsFromDB($conn);
+closeDBConnection($conn);
 
 ?>
