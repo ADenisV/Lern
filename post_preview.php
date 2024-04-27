@@ -1,4 +1,6 @@
 
+
+
 <!-- разметка блока -->
 <a href="/post?id=<?= $post['id'] ?>" class="adventure-card">
   <!-- задний фон -->

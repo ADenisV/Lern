@@ -21,11 +21,11 @@ $posts = [
   'id' => 2,
   'title' => 'From Top Down',
   'subtitle' => 'Once a year, go someplace you’ve never been before.',
-  'img_modifier' => '/static/images/div__usd733_b58f9b.jpeg',
+  'image_url' => '/static/images/div__usd733_b58f9b.jpeg',
   'author' => 'William Wong',
   'author_url' => '/static/images/img_1_187_b5ed31.jpeg',
   'publish_date' => 'September 25, 2015',
-  'url_link' => 'The-Road-Ahead.html',
+  'url_link' => '#',
  ],
 ];
 

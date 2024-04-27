@@ -20,7 +20,7 @@ function closeDBConnection(mysqli $conn): void {
 }
 
 function getAndPrintPostsFromDB(mysqli $conn): void {
-  $sql = "SELECT * FROM post";
+  $sql = "SELECT * FROM post2";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
