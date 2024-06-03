@@ -27,7 +27,7 @@ function get_post_by_id($id) {
   foreach ($posts as $post) {
     return $post;
   }
-  var_dump($posts);
+  
 }
 
 function get_posts_feat() {

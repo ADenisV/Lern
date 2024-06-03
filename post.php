@@ -1,8 +1,11 @@
 <?php 
 include 'db.php' ;
-?>
-<?php
-$post = get_post_by_id($_GET['id']);
+
+
+$id = $_GET['id'];
+echo var_dump($_GET);
+// $post = get_post_by_id($_GET['id']);
+// echo $post;
 ?>
 
 <!DOCTYPE html>
