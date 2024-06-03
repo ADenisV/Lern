@@ -1,6 +1,6 @@
-CREATE DATABASE Post3;
-use Post3;
-CREATE TABLE blogg
+CREATE DATABASE Post;
+use Post;
+CREATE TABLE blog
 (
    `post_id`      INT NOT NULL AUTO_INCREMENT,
    `title`        VARCHAR(255) NOT NULL,

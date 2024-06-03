@@ -1,5 +1,5 @@
 <!-- разметка блока -->
-<a href="/post?id=<?= $post['id'] ?>" class="featur-card">
+<a href="/templates/post_copy.php?id=<?= $post['id'] ?>" class="featur-card">
   <!-- задний фон -->
   <img src="<?= $post['image_url'] ?>" alt="" class="featur-card__img">
   <!-- блок с текстовой информацией -->

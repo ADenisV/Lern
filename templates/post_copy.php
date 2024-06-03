@@ -1,12 +1,7 @@
 <?php
-require 'db.php';
+
+$posting = get_post_by_id($_GET['id']);
 ?>
-<?php
-require 'big_posts.php';
-
-?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,7 +1,6 @@
 
 <?php
-  $post = get_post_by_id($_GET['id']);
-  
+$post = get_post_by_id($_GET['id']);
 ?>
 
 <!DOCTYPE html>

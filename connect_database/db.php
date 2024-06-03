@@ -16,8 +16,8 @@ function get_posts_all() {
 function get_post_by_id($id) {
   global $db;
   $posts = $db->query("SELECT * FROM post WHERE id = $id");
-  foreach ($posts as $post) {
-    return $post;
+  foreach ($posts as $posting) {
+    return $posting;
   }
 }
 
