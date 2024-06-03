@@ -1,7 +1,5 @@
 <?php
-require 'connect_database/db.php';
-
-
+require 'db.php';
 ?>
 
 
@@ -63,7 +61,7 @@ require 'connect_database/db.php';
                 <?php
                   $posts = get_posts_all();
                   foreach ($posts as $post){
-                    include 'templates/post_big.php';
+                    include 'post_big.php';
                   }
                 ?>
               </div>

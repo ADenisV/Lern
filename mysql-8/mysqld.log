@@ -93,3 +93,12 @@
 2024-06-02T15:00:52.896085Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
 2024-06-02T15:00:52.975079Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
 2024-06-02T15:00:52.975266Z 0 [System] [MY-010931] [Server] C:\Servers\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-06-03T13:05:43.834823Z 724 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.30).
+2024-06-03T13:05:43.851535Z 0 [System] [MY-013105] [Server] C:\Servers\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld: Normal shutdown.
+2024-06-03T13:05:45.865940Z 0 [Warning] [MY-010909] [Server] C:\Servers\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld: Forcing close of thread 505  user: 'root'.
+2024-06-03T13:05:45.871604Z 0 [Warning] [MY-010909] [Server] C:\Servers\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld: Forcing close of thread 506  user: 'root'.
+2024-06-03T13:05:47.227673Z 0 [System] [MY-010910] [Server] C:\Servers\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2024-06-03T13:05:53.356543Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-06-03T13:05:53.356622Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-06-03T13:05:53.356665Z 0 [System] [MY-010116] [Server] C:\Servers\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld (mysqld 8.0.30) starting as process 22636
+2024-06-03T13:05:53.476991Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
