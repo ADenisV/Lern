@@ -12,7 +12,7 @@ function get_posts_all() {
   $posts = $db->query("SELECT * FROM post");
   return $posts;
 }
-$id = $_GET['id'];
+
 function get_post_by_id($id) {
   global $db;
   global $id;
