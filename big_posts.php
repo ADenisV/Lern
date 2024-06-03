@@ -15,7 +15,7 @@ $posts = [
   'author' => 'Mat Vogels',
   'author_url' => '/static/images/img_1_224_7a4480.jpeg',
   'publish_date' => 'September 25, 2015',
-  'url_link' => 'The-Road-Ahead.html',
+  
  ],
  [
   'id' => 2,
@@ -25,7 +25,7 @@ $posts = [
   'author' => 'William Wong',
   'author_url' => '/static/images/img_1_187_b5ed31.jpeg',
   'publish_date' => 'September 25, 2015',
-  'url_link' => '#',
+  
  ],
 ];
 

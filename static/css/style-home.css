@@ -64,7 +64,7 @@ body{
   }
 
 /* навигация и тема */
-  .escape-journey-container {
+  .escape {
     padding: 1% 17% 10% 17%;
     min-width: 469px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -72,7 +72,7 @@ body{
     background-repeat: no-repeat, no-repeat;
     background-size: auto, cover;
   }
-  .header {
+  .escape__header {
     display: flex;
     flex: 0 0 auto;
     flex-direction: row;
@@ -80,10 +80,10 @@ body{
     align-items: center;
     justify-content: space-between;
   }
-  .escape-text {
+  .escape__logo {
     margin-top: 3px;
   }
-  .navbar-links-container {
+  .escape__nav {
     display: flex;
     flex: 0 0 auto;
     flex-direction: row;
@@ -91,7 +91,7 @@ body{
     align-items: center;
     justify-content: flex-start;
   }
-  .header-link-style {
+  .escape__link {
     font-family: 'Oxygen';
     font-size: 12px;
     line-height: 20px;
@@ -101,12 +101,12 @@ body{
     white-space: pre-wrap;
     text-decoration: none;
   }
-  .journey-container {
+  .escape__theme {
     padding-right: 17%;
     padding-left: 17%;
     padding-top: 20%;
   }
-  .heading-title {
+  .escape__title {
     margin: 0;
     font-weight: 400;
     font-size: 50px;
@@ -115,7 +115,7 @@ body{
     letter-spacing: 2px;
     white-space: pre-wrap;
   }
-  .heading-subtitle {
+  .escape__subtitle {
     /* flex: 0 0 auto; */
     margin-top: 20px;
     font-family: 'Oxygen';
@@ -126,7 +126,7 @@ body{
     white-space: pre-wrap;
   }
   /* кнопка */
-  .intro__button{
+  .escape__button{
     padding: 0;
     display: block;
     font-family: 'Oxygen';
@@ -144,7 +144,7 @@ body{
   }
 
 /* nav 2 */
-.nav2 {
+.nav {
   margin-top: 22px;
   margin-bottom: 22px;
   min-width: 469px;
@@ -154,7 +154,7 @@ body{
   justify-content: space-evenly;
   padding: 0 17vw;
 }
-.nature-theme-paragraphs {
+.nav__item {
   display: flex;
   justify-content: center;
   min-width: 72px;
@@ -165,7 +165,7 @@ body{
 
 /* большой блок карточек */
 
-.featured-posts-container {
+.posts {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -175,7 +175,7 @@ body{
   padding: 60px 17vw 108px;
   background: rgba(247, 247, 247, 1);
 }
-.story-big-container {
+.posts__big {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
@@ -185,7 +185,7 @@ body{
     min-width: 315px;
   }
 /* стиль названия отдела */
-.recent-title-text-style {
+.post__title_style {
   flex: 0 0 auto;
   font-family: 'Oxygen';
   font-weight: 400;
@@ -195,7 +195,7 @@ body{
   white-space: pre-wrap;
 }
 /* линия под названием отдела */
-.recent-separator {
+.post__separator {
   box-sizing: border-box;
   flex: 0 0 auto;
   width: 188px;
@@ -206,7 +206,7 @@ body{
 
 
 /* большие карты */
-.featured-posts-container1 {
+.post__featur {
   display: flex;
   justify-content: space-between;
   margin-top: 23px;
@@ -214,7 +214,7 @@ body{
   gap: 2vw;
 }
   /* размер карты */
-  .adventure-card {
+  .featur-card {
     position: relative;
     flex: 1 1 0;
     width: 32vw;
@@ -223,7 +223,7 @@ body{
     
     }
     /* задний фон */
-    .adventure-card-img{
+    .featur-card__img{
     object-fit: cover;
     border: none;
     border-radius: 6px;
@@ -231,7 +231,7 @@ body{
     height: 100%;
     }
       /* блок с текстом */
-      .quote-card {
+      .featur-card__info {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -242,7 +242,7 @@ body{
       padding: 20px 20px 15px;
       }
           /* отсек с тегом */
-          .teg{
+          .featur-card__teg{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -259,16 +259,16 @@ body{
             
           }
               /* видимость тега на 1й карте */
-              .visible1 {
+              .featur-card__visible1 {
                 visibility: hidden;
               } 
               /* видимость тега на 2й катре */
-              /* .visible2 {
+              /* .featur-card__visible2 {
                 visibility: hidden;
               } */
             
           /* заголовок стиль */
-          .article-title {
+          .featur-card__title {
             flex: 0 0 auto;
             margin-top: 110px;
             font-size: 27px;
@@ -277,7 +277,7 @@ body{
             white-space: pre-wrap;
           }
           /* подзаголовок стиль */
-          .road-ahead-text-style {
+          .featur-card__subtitle {
             margin-top: 6px;
             font-size: 14px;
             font-family: 'Oxygen';
@@ -286,14 +286,14 @@ body{
             min-height: 38px;
           }
           /* автор и дата */
-          .article-container {
+          .featur-card__meta {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-top: 12px;
           }
-              /* стиль аватарки */
-              .rounded-image-avatar {
+          /* стиль аватарки */
+          .author__icon {
                 box-sizing: border-box;
                 display: block;
                 width: 26px;
@@ -302,26 +302,18 @@ body{
                 border: none;
                 border-radius: 60px;
                 object-fit: cover;
-              }
-              /* стиль даты */
-              .article-date-text-style {
-                flex: 0 0 auto;
-                font-weight: 400;
-                font-size: 12px;
-                font-family: 'Oxygen';
-                color: white;
-                white-space: pre-wrap;
-              }
+          }
+              
 
 
 
 /* маленькие карты и название отдела */
-.vertical-card-container {
+.posts__small {
   align-self: center;
   margin-top: 67px;
 }
     /* название отдела */
-    .vertical-center-text-container {
+    .post__title {
       display: flex;
       flex: 0 0 auto;
       flex-direction: column;
@@ -329,7 +321,7 @@ body{
       justify-content: flex-start;
     }
     /* отдел с маленькими картами */
-    .vertical-card-container1 {
+    .post__most {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -339,7 +331,7 @@ body{
     }
 
 /* карты */
-.card-container{
+.most-card{
   display: flex;  
   flex: 1;
   flex-direction: column;  
@@ -350,7 +342,7 @@ body{
 }
 
         /* картинка */
-        .card-container-image {
+        .most-card__image {
           display: flex;
           box-sizing: border-box;
           height: 150px;
@@ -360,13 +352,13 @@ body{
           }
             
             /* стиль картинки */
-            .img-lit-card{
+            .most-card__image_style{
               width: 100%;
               height: 100%;
               object-fit: cover;
             }
         /* линия под картинкой */
-        .nested-text-container {
+        .most-card__separetion {
           box-sizing: border-box;
           flex: 0 0 auto;
           /* width: 21vw; */
@@ -376,7 +368,7 @@ body{
         }
 
     /* название */
-    .title-subtitle{
+    .theme{
       display: flex;
       flex: 0 0 auto;
       flex-direction: column;
@@ -388,7 +380,7 @@ body{
       
     }
         /* заголовок стиль*/
-        .card-title{
+        .theme__title{
           font-weight: 400;
           font-size: 16px;
           font-family: 'Lora';
@@ -397,7 +389,7 @@ body{
           margin-top: 14px;
         }
         /* подзаголовок стиль */
-        .card-subtitle{
+        .theme__subtitle{
           box-sizing: border-box;
           max-width: 18vw;
           min-height: 38px;
@@ -411,18 +403,10 @@ body{
           white-space: pre-wrap;
         }
 
-    /* ллиния под названием */
-    .rule-under-subtitle{
-      box-sizing: border-box;
-      flex: 0 0 auto;
-      /* width: 21vw; */
-      height: 1px;
-      margin-top: 12px;
-      background: rgba(239, 239, 239, 1);
-    }
+    
 
     /* автор и дата */
-    .author-and-date{
+    .author{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -433,7 +417,7 @@ body{
       background: rgba(252, 252, 252, 1);
     }
         /* автор */
-        .author-container{
+        .author__icon-name{
           display: flex;
           align-items: center;
           justify-content: flex-start;
@@ -441,7 +425,7 @@ body{
             /* аватарка */
 
             /* имя и стиль */
-            .author-style{
+            .author__name{
               margin-left: 10px;
               font-weight: 400;
               font-size: 12px;
@@ -450,7 +434,7 @@ body{
               white-space: pre-wrap;
             }
         /* дата и стиль даты */
-        .meta-text {
+        .author__date {
           flex: 0 0 auto;
           font-weight: 400;
           font-size: 12px;
@@ -471,7 +455,7 @@ body{
   
   
 }
-.escape-menu {
+.footer__menu {
     box-sizing: border-box;
     display: flex;
     flex: 1;
@@ -479,14 +463,14 @@ body{
     gap: 10px;
     padding: 0 17vw;
 }
-  .navbar-container {
+  .footer__nav {
     box-sizing: border-box;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: flex-end;
   }
-  .navigation-link-styles {
+  .footer__link {
     flex: 0 0 auto;
     font-family: 'Oxygen';
     font-size: 11px;
