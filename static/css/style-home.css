@@ -335,7 +335,7 @@ body{
   display: flex;  
   flex: 1;
   flex-direction: column;  
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 6px;
   min-width: 20vw;
   text-decoration: none;

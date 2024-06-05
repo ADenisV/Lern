@@ -1,0 +1,145 @@
+/* lora-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lora-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* oxygen-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/oxygen-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lora';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #2E2E2E;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #ffffff;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+/*.header__logo{    
+    font-size: 26px;
+    line-height: 26px;
+    color: #2E2E2E;
+    text-decoration: none;
+}*/
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item{
+    margin-right: 40px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-family: 'Oxygen';
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: #2E2E2E;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.intro{
+    padding-top: 163px;
+    text-align: center;
+
+}
+.intro__title{
+    font-family: 'Lora';
+    font-size: 50px;
+    line-height: 51px;
+    color: 2E2;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.intro__subtitle{
+    font-family: 'Oxygen';
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 160px;
+}
+.intro__img{
+    /* display: block; */
+    width: 100%;
+    /* height: auto; */
+    /* max-width: 100%; */
+}
+
+.content{
+    padding: 140px 0px 140px;
+}
+.content__text{
+    font-family: 'Oxygen';
+    font-size: 24px;
+    line-height: 35px;
+}
+
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/images/IMAGEfooter.svg) 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    
+    
+  }
+  .footer__menu {
+      box-sizing: border-box;
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 0 17vw;
+  }
+    .footer__nav {
+      box-sizing: border-box;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .footer__link {
+      flex: 0 0 auto;
+      font-family: 'Oxygen';
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.6) ;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      white-space: pre-wrap;
+    }

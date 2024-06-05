@@ -1,11 +1,11 @@
 <?php 
 include 'db.php' ;
-
-
-$id = $_GET['id'];
-echo var_dump($_GET);
-// $post = get_post_by_id($_GET['id']);
-// echo $post;
+if(empty($_GET['id'])) 
+{
+  header("Location: home");
+  exit;
+}
+$post = get_post_by_id($_GET['id']);
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ echo var_dump($_GET);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $post['title'] ?></title>
     <link href="/static/css/reset.css" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/style-post.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">      
@@ -64,31 +64,21 @@ echo var_dump($_GET);
         </div>
       </section>
     </main>
+     
+    
     <footer class="footer">
-      <div class="wrapper">
-        <div class="footer__wrapper">
-          <a href="index.html" class="footer__logo">
-            <img class="footer__img" src="/static/images/Escape.footer.svg" alt="logo">
-          </a>
-             
-          <nav class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#!" class="footer__link">home</a>
-              </li>
-              <li class="footer__item">
-                <a href="#!" class="footer__link">categories</a>
-              </li>
-              <li class="footer__item">
-                <a href="#!" class="footer__link">about</a>
-              </li>
-              <li class="footer__item">
-                <a href="#!" class="footer__link">contact</a>
-              </li>
-            </ul>
-          </nav> 
+      <!-- паддинги и блок с лого и навбвром -->
+      <div class="footer__menu">
+        <a href="home" class="footer__logo">
+          <img src="/static/images/Escape..svg" alt="Escape.">
+        </a>
+        <div class="footer__nav">
+          <a href="home" class="footer__link">Home</a>
+          <a href="#" class="footer__link">Categories</a>
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Contact</a>
         </div>
       </div>
-    </footer>   
+    </footer>
   </body>
 </html>
