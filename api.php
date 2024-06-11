@@ -58,7 +58,6 @@ if ($dataAsJson) {
     }
   }
 
-
 $title = $dataAsArray["title"];
 $subtitle = $dataAsArray["subtitle"];
 $content = $dataAsArray["content"];
@@ -82,32 +81,5 @@ $query = $db->query("INSERT INTO posts (
     ) 
     VALUES ( NULL, '$title', '$subtitle', '$content', '$author', '$author_url', '$publish_date', '$image_url', '$featured')
     ") ;
-
-
-// $stmt = $db->prepare($query);
-
-
-// $title = $dataAsJson['title'];
-// $subtitle = $dataAsJson['subtitle'];
-// $content = $dataAsJson['content'];
-// $author = $dataAsJson['author'];
-// $author_url = $dataAsJson['author_url'];
-// $publish_date = $dataAsJson['publish_date'];
-// $image_url = $dataAsJson['image_url'];
-// $featured = $dataAsJson['featured'] ? 1 : 0;
-
-
-// $stmt = $conn->prepare($query);
-// $stmt->bind_param("title", $title);
-// $stmt->bind_param("subtitle", $subtitle);
-// $stmt->bind_param("content", $content);
-// $stmt->bind_param("author", $author);
-// $stmt->bind_param("author_url", $author_url);
-// $stmt->bind_param("2023-01-01 12:00:00", $publish_date);
-// $stmt->bind_param("image_url", $image_url);
-// $stmt->bind_param("0", $featured);
-
-
-// $stmt->execute();
 ?>
 
