@@ -42,13 +42,6 @@ function get_post_by_id($id) {
   closeDBConnection($db);
 }
 
-
-
-
-
-
-
-
 function getMostRecentPostsFromDB(mysqli $db): void {
   $sql = "SELECT * FROM posts WHERE featured=0";
   $result = $db->query($sql);
