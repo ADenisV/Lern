@@ -1,5 +1,5 @@
-<?php
 const HOST = 'localhost';
+<?php
 const USERNAME = 'root';
 const PASSWORD = '';
 const DATABASE = 'blog';

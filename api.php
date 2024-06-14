@@ -63,10 +63,9 @@ $subtitle = $dataAsArray["subtitle"];
 $content = $dataAsArray["content"];
 $author = $dataAsArray["author"];
 $author_url = $dataAsArray["author_url"];
-echo $publish_date = $dataAsArray["publish_date"];
+$publish_date = $dataAsArray["publish_date"];
 $image_url = $path;
-echo '<br>';
-echo $featured = $dataAsArray["featured"] ? 1 : 0;
+$featured = $dataAsArray["featured"] ? 1 : 0;
 
 $query = $db->query("INSERT INTO posts (
     id, 
